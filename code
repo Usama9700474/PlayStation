@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win a PlayStation 5!</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Win a PlayStation 5 by entering our exciting giveaway! Don't miss out on your chance to get the ultimate gaming experience.">
+    <meta property="og:title" content="Win a PlayStation 5! Enter Now!" />
+    <meta property="og:description" content="Enter the giveaway for a chance to win a PlayStation 5. Limited time only, don't miss out!" />
+    <meta property="og:image" content="ps5-image.jpg" />
+    <meta property="og:url" content="YOUR_LANDING_PAGE_URL_HERE" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Your Brand Logo</div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>🎮 Win a PlayStation 5! 🎮</h1>
+                <p>Enter for your chance to win the ultimate gaming console. Act fast – time is running out!</p>
+                <img src="ps5-image.jpg" alt="PlayStation 5" class="ps5-img">
+                <p><strong>Only a few days left!</strong></p>
+                <button class="cta-btn" onclick="window.location.href='YOUR_AFFILIATE_LINK_HERE'">Enter Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-suggestions" class="ai-suggestions">
+        <div class="container">
+            <h2>💡 AI-Powered Tips for Winning</h2>
+            <p>Our AI suggests these 3 quick steps to increase your chances of winning!</p>
+            <ul>
+                <li><strong>Complete All Steps:</strong> The more actions you complete, the better your chances!</li>
+                <li><strong>Share with Friends:</strong> Get bonus entries by sharing the giveaway on social media!</li>
+                <li><strong>Stay Active:</strong> Engage with us regularly to stay updated on any extra promotions!</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="details" class="details">
+        <div class="container">
+            <h2>How to Enter</h2>
+            <ul>
+                <li>Click the "Enter Now" button above.</li>
+                <li>Complete the simple steps on the next page.</li>
+                <li>Good luck – you could be our next winner!</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="fomo" class="fomo">
+        <div class="container">
+            <h2>Hurry! The contest ends in:</h2>
+            <div id="countdown">
+                <p id="timer"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="social-proof" class="social-proof">
+        <div class="container">
+            <h2>What Our Winners Are Saying:</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"I can't believe I won! This is a dream come true!" – Sarah T.</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Thanks for the amazing giveaway! I love my new PS5!" – James L.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="terms" class="terms">
+        <div class="container">
+            <h2>Contest Terms & Conditions</h2>
+            <p>By entering this giveaway, you agree to our <a href="/terms">Terms & Conditions</a> and Privacy Policy. This promotion is in no way sponsored, endorsed, or administered by, or associated with Facebook.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Brand. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer Script
+        var countdownDate = new Date("March 20, 2025 23:59:59").getTime();
+        var timer = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countdownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(timer);
+                document.getElementById("timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
